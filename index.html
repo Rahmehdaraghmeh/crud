@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDPROJECT</title>
+   
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+
+    <div class="add-course">
+       
+        <div class="container">
+
+            <h1>CRUD System</h1>
+
+        <label for="">course name</label>
+        <input type="text" placeholder="cource name"  id="courseName">
+        <div class="error"> please start with capital later  </div>
+        <label for="">course category</label>
+        <input type="text" placeholder="cource category"  id="courseCategory">
+
+        <label for="">course price</label>
+        <input type="number" placeholder="cource price" id="coursePrice" >
+
+        <label for="">course description</label>
+        <textarea id="courseDescription" placeholder="courseDescription"></textarea>
+
+        <button onclick="createcourse()">Add Cource</button>
+        <button onclick="clearinput()">clear</button>
+
+
+
+    </div>
+
+    <input type="search" onkeyup="searchcourses()" placeholder="search... " id="search" >
+
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>category</th>
+                <th>price</th>
+                <th>description</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+
+        <tbody id ="data">
+ </tbody>
+    </table>
+    </div>
+    
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
